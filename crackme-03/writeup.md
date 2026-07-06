@@ -1,27 +1,33 @@
-# Writeup Crackme 03: Analisis code.exe
+# Writeup Crackme-03: Analisis Logika Input `code.exe`
 
-## Tujuan Analisis
-Tujuan dari tantangan ini adalah menemukan dua angka rahasia yang dibutuhkan untuk memicu pesan keberhasilan program.
+## Informasi Tantangan
+* **Nama File**: `code.exe`
+* **Tingkat Kesulitan**: 1.0 (Easy)
+* **Arsitektur**: x86-64 (PE32)
+* **Tujuan**: Membedah logika pengecekan *input* program dan menemukan nilai kunci yang benar.
 
-## Proses Analisis
-1. **Triage**: Memeriksa file menggunakan Ghidra untuk membedah *binary* PE.
-2. **Static Analysis**: 
-   - Ditemukan fungsi `main` yang menggunakan `scanf` untuk menerima input pengguna.
-   - Analisis kode menunjukkan adanya dua tahap pengecekan:
-     - Tahap 1: `if (local_c == 0x21)` 
-     - Tahap 2: `if (local_10 == 0x66)`
-3. **Logika**: 
-   - Nilai `0x21` (heksadesimal) setara dengan **33** (desimal).
-   - Nilai `0x66` (heksadesimal) setara dengan **102** (desimal).
-   
+## 1. Analisis Statis (Triage)
+Pada tahap awal, file dieksekusi menggunakan *Static Analysis Tool* (Ghidra) untuk mengidentifikasi alur kerja program.
+* **Metode**: Dekompilasi *binary* menjadi kode representatif bahasa C.
+* **Temuan Awal**: Program menggunakan fungsi standar `printf` dan `scanf` untuk interaksi pengguna.
+
+## 2. Bedah Logika (Ghidra Decompiler)
+Hasil dekompilasi menunjukkan adanya dua tahap pengecekan input yang bersifat *hardcoded*:
+
 ## Proses dalam Ghidra   
 ![Analisis Ghidra](ghidra.png)
 
-## Hasil Eksekusi
-Program berhasil memberikan pesan sukses "Congratulations, you have completed the challenge!" setelah input diberikan melalui *command prompt* sesuai dengan hasil konversi nilai heksadesimal tersebut.
+Berdasarkan kode di atas, ditemukan logika berikut:
+1. **Input Pertama**: Harus bernilai `0x21` (heksadesimal) atau **33** (desimal).
+2. **Input Kedua**: Harus bernilai `0x66` (heksadesimal) atau **102** (desimal).
 
-## Hasil eksekusi melalui command prompt 
+## 3. Hasil Eksekusi (Dinamis)
+Setelah mengetahui nilai yang diharapkan, dilakukan pengujian melalui *Command Prompt* untuk memverifikasi temuan:
+
+## Hasil eksekusi melalui command prompt
 ![Hasil Eksekusi](result.png)
 
-## Kesimpulan
-Analisis statis melalui Ghidra sangat efektif untuk menemukan logika perbandingan angka, dan eksekusi melalui *command prompt* mengonfirmasi validitas analisis tersebut.
+Program berhasil mengeluarkan pesan *"Congratulations, you have completed the challenge!"* setelah input **33** dan **102** dimasukkan secara berurutan.
+
+## 4. Kesimpulan
+Tantangan ini mengajarkan dasar-dasar *reverse engineering* di mana analis harus mampu melakukan konversi nilai antara heksadesimal ke desimal serta membaca alur logika program melalui dekompilator. Tantangan ini berhasil diselesaikan dengan metode analisis statis yang dikonfirmasi dengan pengujian dinamis.
