@@ -15,7 +15,7 @@ Pada tahap awal, file dieksekusi menggunakan *Static Analysis Tool* (Ghidra) unt
 Hasil dekompilasi menunjukkan adanya dua tahap pengecekan input yang bersifat *hardcoded*:
 
 ## Proses dalam Ghidra   
-![Analisis Ghidra](ghidra.png)
+![Analisis Ghidra](./ghidra.png)
 
 Berdasarkan kode di atas, ditemukan logika berikut:
 1. **Input Pertama**: Harus bernilai `0x21` (heksadesimal) atau **33** (desimal).
@@ -27,7 +27,12 @@ Setelah mengetahui nilai yang diharapkan, dilakukan pengujian melalui *Command P
 ## Hasil eksekusi melalui command prompt
 ![Hasil Eksekusi](result.png)
 
+<<<<<<< HEAD
 Program berhasil mengeluarkan pesan *"Congratulations, you have completed the challenge!"* setelah input **33** dan **102** dimasukkan secara berurutan.
 
 ## 4. Kesimpulan
 Tantangan ini mengajarkan dasar-dasar *reverse engineering* di mana analis harus mampu melakukan konversi nilai antara heksadesimal ke desimal serta membaca alur logika program melalui dekompilator. Tantangan ini berhasil diselesaikan dengan metode analisis statis yang dikonfirmasi dengan pengujian dinamis.
+=======
+## Kesimpulan
+Analisis statis melalui Ghidra sangat efektif untuk menemukan logika perbandingan angka, dan eksekusi melalui *command prompt* mengonfirmasi validitas analisis tersebut.
+>>>>>>> 9c695bb1955c011eff5c58efc379e5054deb6372
