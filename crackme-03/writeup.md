@@ -15,7 +15,7 @@ Tujuan dari tantangan ini adalah menemukan dua angka rahasia yang dibutuhkan unt
    - Nilai `0x66` (heksadesimal) setara dengan **102** (desimal).
    
 ## Proses dalam Ghidra   
-![Analisis Ghidra](ghidra.png)
+![Analisis Ghidra](./ghidra.png)
 
 ## Hasil Eksekusi
 Program berhasil memberikan pesan sukses "Congratulations, you have completed the challenge!" setelah input diberikan melalui *command prompt* sesuai dengan hasil konversi nilai heksadesimal tersebut.
