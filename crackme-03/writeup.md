@@ -13,9 +13,11 @@ Tujuan dari tantangan ini adalah menemukan dua angka rahasia yang dibutuhkan unt
 3. **Logika**: 
    - Nilai `0x21` (heksadesimal) setara dengan **33** (desimal).
    - Nilai `0x66` (heksadesimal) setara dengan **102** (desimal).
+![Analisis Ghidra](ghidra.png)
 
 ## Hasil Eksekusi
 Program berhasil memberikan pesan sukses "Congratulations, you have completed the challenge!" setelah input diberikan melalui *command prompt* sesuai dengan hasil konversi nilai heksadesimal tersebut.
+![Hasil Eksekusi](result.png)
 
 ## Kesimpulan
 Analisis statis melalui Ghidra sangat efektif untuk menemukan logika perbandingan angka, dan eksekusi melalui *command prompt* mengonfirmasi validitas analisis tersebut.
