@@ -38,7 +38,7 @@ int calculate_checksum(string username) {
         checksum += (int(username[i]) * 4);
     }
     return checksum;
-}
+}```
 
 // Logika Validasi
 if (input_password == calculate_checksum(input_username)) {
@@ -60,7 +60,7 @@ Berdasarkan tangkapan layar di bawah ini, program berhasil menerima *input* dan 
 user: abcd
 password: 1576
 GOOD!
-Press any key to continue . . .
+Press any key to continue . . .```
 
 ## Hasil eksekusi melalui command prompt
 ![Hasil Eksekusi](result.png)
