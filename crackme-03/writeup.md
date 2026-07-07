@@ -35,4 +35,3 @@ Tantangan ini mengajarkan dasar-dasar *reverse engineering* di mana analis harus
 =======
 ## Kesimpulan
 Analisis statis melalui Ghidra sangat efektif untuk menemukan logika perbandingan angka, dan eksekusi melalui *command prompt* mengonfirmasi validitas analisis tersebut.
->>>>>>> 9c695bb1955c011eff5c58efc379e5054deb6372
