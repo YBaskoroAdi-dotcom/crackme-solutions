@@ -38,7 +38,8 @@ int calculate_checksum(string username) {
         checksum += (int(username[i]) * 4);
     }
     return checksum;
-}```
+}
+ ```
 
 // Logika Validasi
 if (input_password == calculate_checksum(input_username)) {
