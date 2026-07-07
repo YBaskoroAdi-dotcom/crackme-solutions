@@ -2,7 +2,7 @@
 
 
 ## Metadata
-- **Nama**: deo's High cortisol
+- **Nama**: deo's High cortisol  
 - **Target**: `mbb.exe`
 - **Tipe**: C++ Console Application
 - **Arsitektur**: x86-64
