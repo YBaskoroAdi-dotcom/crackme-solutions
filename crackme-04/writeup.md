@@ -9,6 +9,7 @@ Tujuan dari tantangan ini adalah untuk mengidentifikasi algoritma validasi *inpu
 - **Tipe**: C++ Console Application
 - **Arsitektur**: x86-64
 - **Tools**: Ghidra
+- **Difficulty**: 2.2 (Medium)
 - **Sumber**: https://crackmes.one/crackme/6167747a33c5d4329c345148
 
 ## Analisis Statis
