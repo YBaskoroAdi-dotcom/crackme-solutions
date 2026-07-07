@@ -1,10 +1,14 @@
 # Writeup Crackme-03: Analisis Logika Input `code.exe`
 
-## Informasi Tantangan
-* **Nama File**: `code.exe`
-* **Tingkat Kesulitan**: 1.0 (Easy)
-* **Arsitektur**: x86-64 (PE32)
-* **Tujuan**: Membedah logika pengecekan *input* program dan menemukan nilai kunci yang benar.
+
+## Metadata
+- **Nama**: RR7's Secret key
+- **Target**: `code.exe`
+- **Tipe**: C++ Console Application
+- **Arsitektur**: x86-64
+- **Tools**: Ghidra
+- **Difficulty**: 1.0 (Easy)
+- **Sumber**: https://crackmes.one/crackme/6a46f20c8a86e4c2c5525631
 
 ## 1. Analisis Statis (Triage)
 Pada tahap awal, file dieksekusi menggunakan *Static Analysis Tool* (Ghidra) untuk mengidentifikasi alur kerja program.
