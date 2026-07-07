@@ -1,24 +1,25 @@
-"## Crackme Solutions
+# Reverse Engineering Task Solutions
 
-Repositori ini merupakan dokumentasi teknis dan *writeup* analisis dari berbagai tantangan *crackme* yang diambil dari *platform* crackmes.one. Proyek ini disusun untuk memenuhi tugas mata kuliah Keamanan Siber sebagai bukti autentik proses belajar *Reverse Engineering*.
+Repositori ini berisi solusi dan dokumentasi untuk berbagai tantangan *Reverse Engineering* (CrackMe) yang dikerjakan sebagai bagian dari tugas mata kuliah.
 
-## Tujuan Analisis
-Tujuan utama dari repositori ini adalah:
-1. Mempraktikkan teknik analisis statis menggunakan alat disassembler seperti Ghidra.
-2. Mengasah kemampuan analisis dinamis dengan melakukan *debugging* pada *binary* menggunakan x64dbg.
-3. Mendokumentasikan alur berpikir dalam membedah proteksi program dan mencari kerentanan logika pada *binary* PE.
+## Status Pengerjaan
 
-## Daftar Solusi
-Setiap solusi tersimpan dalam folder spesifik, mencakup:
-- **Crackme-01**: Analisis dasar fungsi pengecekan *password*.
-- **Crackme-02**: Rekayasa balik algoritma verifikasi *serial key*.
-- **Crackme-03**: (Akan segera ditambahkan) Eksplorasi proteksi tingkat lanjut.
+| Nama Tantangan | Kesulitan | Status | Keterangan |
+| :--- | :--- | :--- | :--- |
+| CrackMe-03 | 1.0 | ✅ Selesai | Analisis statis dan validasi input. |
+| CrackMe-04 | 2.2 | ✅ Selesai | Analisis aritmatika dan pembuatan *keygen*. |
+| CrackMe-05 | 5.0 | ✅ Selesai | Analisis *anti-disassembly* dan dekripsi *flag*. |
+
+## Struktur Repositori
+- `crackme-03/`: Dokumentasi dan solusi tantangan 03.
+- `crackme-04/`: Analisis `Untitled3.exe`, *keygen*, dan *writeup*.
+- `crackme-05/`: Analisis tantangan tingkat Hard (`mbb.exe`) dan dekripsi *flag*.
 
 ## Metodologi
-Dalam setiap *writeup*, saya mengikuti alur kerja sistematis:
-- Melakukan *triage* pada file untuk memahami struktur dasarnya.
-- Menganalisis alur logika program melalui disassembler.
-- Memverifikasi temuan dengan melakukan *tracing* di *debugger*.
+Setiap tantangan diselesaikan menggunakan metode:
+1. **Static Analysis**: Menggunakan Ghidra untuk memetakan alur kontrol dan algoritma validasi.
+2. **Verification**: Melakukan pengujian langsung di lingkungan terisolasi untuk memastikan kebenaran hasil.
+3. **Documentation**: Menyusun *writeup* teknis yang mencakup deskripsi algoritma dan pembuktian matematis.
 
-## Disclaimer
-Seluruh pengerjaan tugas ini dilakukan di *environment* virtual yang aman. Tujuan dari repositori ini murni untuk pembelajaran dan pengembangan kemampuan di bidang keamanan siber." 
+---
+*Dibuat untuk tugas mata kuliah Reverse Engineering - Semester 4.*
