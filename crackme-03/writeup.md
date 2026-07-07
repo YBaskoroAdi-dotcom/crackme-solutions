@@ -2,7 +2,7 @@
 
 
 ## Metadata
-- **Nama**: RR7's Secret key
+- **Nama**: RR7's Secret key 
 - **Target**: `code.exe`
 - **Tipe**: C++ Console Application
 - **Arsitektur**: x86-64
