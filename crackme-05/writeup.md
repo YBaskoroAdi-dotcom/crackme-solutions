@@ -7,6 +7,7 @@
 - **Tipe**: C++ Console Application
 - **Arsitektur**: x86-64
 - **Tools**: Ghidra
+- **Difficulty**: 5.0 (Hard)
 - **Sumber**: https://crackmes.one/crackme/6a25ae31e13aafcf3f84fa7b
 
 
